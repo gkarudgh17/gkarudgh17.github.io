@@ -1,6 +1,6 @@
 # Post
 ## Spring
-[* Post1](https://gkarudgh17.github.io/spring/springboot_MultiThread)
+* [ThreadPool과 MultiThread](https://gkarudgh17.github.io/spring/multiThread)
 * Post2
 * Post3
 
