@@ -1,7 +1,6 @@
 ```java
 /*
-* thread Pool config 설정
-* 
+* ThreadPool config 설정
 */
 @Configuration
 @EnableAsync
@@ -42,10 +41,10 @@ public class ECrawlingApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-    for(int i=0; i<100; i++) {
-      multiThreadTest.print(i);
-    }
-  }
+    		for(int i=0; i<100; i++) {
+	      		multiThreadTest.print(i);
+    		}
+  	}
 }
 ```
 
@@ -53,6 +52,7 @@ public class ECrawlingApplication implements CommandLineRunner {
 @Component
 public class MultiThreadTest {
 	
+	// 이름이 같은 bean의 ThreadPool에 
 	@Async("executor")
 	public void print(int index) throws Exception {
 		System.out.println(index + " : " + Thread.currentThread().getName());
